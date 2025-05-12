@@ -95,3 +95,28 @@ const ejercicio2 = () => {
     alert(resultado);
 }
 
+function ejercicio3() {
+    let cantidad = parseInt(prompt("Cuantas repeticiones de ´*+_´"));
+
+    let resultado = "";
+
+    for (let i = 0; i < cantidad; i++) {
+        resultado = resultado + "*+_";
+    }
+    alert(resultado);
+}
+
+function ejercicio4() {
+    let filas = parseInt(prompt("Cuantas filas quieres en el triangulo?"));
+
+    let resultado = "";
+
+    for (let i = 1; i <= filas; i++) {
+        let linea = "";
+        for (let j = 1; j <= i; j++) {
+            linea = linea + "*";
+        }
+        resultado = resultado + linea + "\n";
+    }
+    alert(resultado);
+}
