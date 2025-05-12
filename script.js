@@ -120,3 +120,20 @@ function ejercicio4() {
     }
     alert(resultado);
 }
+
+
+function ejercicio5() {
+    let dia1 = parseInt(prompt("Inserta el primer dia:"));
+    let mes1 = parseInt(prompt("Inserta el primer mes:"));
+
+    let dia2 = parseInt(prompt("Inserta el segundo dia:"));
+    let mes2 = parseInt(prompt("Inserta el segundo mes:"));
+
+    let fecha1 = new Date(2024, mes1, dia1);
+    let fecha2 = new Date(2024, mes2, dia2);
+
+    let diferenciaMes = fecha2 - fecha1;
+    let diferenciaDias = diferenciaMes / (1000 * 60 * 60 * 24);
+
+    alert("La diferencia entre las fechas es de" + diferenciaDias + "dias");
+}
